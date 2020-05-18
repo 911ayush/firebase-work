@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+	<link rel="stylesheet" href="contactus.css">
+	<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+	
+</head>
+<body class="clas">
+    <header class="header">
+        <div class="main">
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Helpers</a></li>
+                <li><a href="#">My Bookings</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+	<div class="contact">
+		<h1 style="font-size:70px;color:black;font-family:Andalus ">
+		We'd love to hear from you
+		</h1><br><br>
+		<p >Whether you have a question about features, trails, pricing, need a demo, or anything else, our team is ready to answer all your questions </p>   
+	</div>
+	<div class="form-message">
+		<form id="form-message">
+<input type="text" class="places" name="city" placeholder="city" required><br><br>
+<input type="text" class="places" name="city_detail" placeholder="city_zone" required><br><br>
+<input type="text" class="places" name="service" placeholder="service" required><br><br>
+<input type="text" class="places" name="type_service" placeholder="type of service" required><br><br>
+<input type="text" class="places" name="cost" placeholder="cost" required><br><br>
+<textarea type="text" class="places" name="description" placeholder="description" required></textarea><br><br>
+<input type="text" class="places" name="id" placeholder="id" required><br><br>
+<input type="submit" id="sub_btn" value="Leave" >
+</form>
+</div>
+<button type="button" value="check" onclick="check()"></button>
+<script src='firestore.js'></script>
+</body>
+</html>
